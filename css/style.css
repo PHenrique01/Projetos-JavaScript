@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --cor1: #0D0D0D;
+    --cor2: #115959;
+    --cor3: #30F2CF;
+    --cor4: #2EF2BB;
+    --cor5: #F2F2F2; 
+ 
+    --font: 'Inter', sans-serif;;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    background-attachment: fixed;
+    font-family: var(--font);
+}
+
+/* Container */
+
+#container{
+    background-color: var(--cor5);
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px #0d0d0da1;
+}
+
+#container #TextCenter{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Content */
+
+#content{ 
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#content .projeto{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--cor1);
+    border-left: 10px solid var(--cor1);
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+#content .projeto:hover{
+    transform: translate(0px, -4px);
+    transition: transform 0.4s;
+    border-left: 10px solid var(--cor2);
+}
+
+.projeto a h3{
+    color: var(--cor1);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+}
