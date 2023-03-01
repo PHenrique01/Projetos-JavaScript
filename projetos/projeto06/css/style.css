@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #090A0A;
+    --cor2: #0E0F0F;
+    --cor3: #171A1A;
+    --cor4: #2C3030;
+    --cor5: #404747;
+    --cor6: #FFFFFF;
+}
+
+html, body{
+    background-color: var(--cor6);
+    height: 100%;
+    transition: 0.3s;
+}
+
+/* Header */
+
+header{
+    background-color: var(--cor6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 10px 0.5px rgba(9, 10, 10, 0.932);
+    padding: 1em 2em;
+    position: relative;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.bi{
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.bi-moon{
+    display: none;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--cor6);
+    display: flex;
+    width: 100%;
+    max-width: 60%;
+    margin-top: 4em;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.3);
+}
+
+.card-image{
+    padding: 2em;
+    width: 50%;
+    position: relative;
+    background-color: var(--cor6);
+    overflow: visible;
+}
+
+.card-image span{
+    font-size: 6em;
+    font-weight: 600;
+}
+
+.card img{
+    width: 130%;
+    transform: rotate(-25deg);
+    position: absolute;
+    right: -1em;
+    top: 10em;
+}
+
+.card-details{
+    width: 50%;
+    padding: 2em;
+}
+
+.card-details h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    color: var(--cor5);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1em;
+} 
+
+.description{
+    line-height: 1.6em;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.btn{
+    background-color: var(--cor1);
+    color: var(--cor6);
+    width: 7em;
+    height: 3em;
+    border: none;
+    border-radius: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Dark theme */
+
+/* Dark theme - Header */
+
+.dark, .dark header{
+    background-color: var(--cor2);
+    color: var(--cor6);
+}
+
+.dark header{
+    box-shadow: 0.5px 0.5px 6px 0.5px rgba(255, 255, 255, 0.753);
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+/* Dark theme - Main */
+
+.dark .card{
+    background-color: var(--cor6);
+    box-shadow: 0px 0px 10px 2px rgba(255, 254, 254, 0.3);
+}
+
+.dark .card-details{
+    color: var(--cor1);
+}
+
+.dark .card-image{
+    background-color: var(--cor2);
+}
+
+.dark .subtitle{
+    color: var(--cor5);
+}
+
+.dark .description{
+    color: var(--cor1);
+}
+
+.dark .btn{
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+
+/* -------- */
